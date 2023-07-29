@@ -1,0 +1,9 @@
+{
+  "Version": "2012-10-17",
+  "Statement": {
+    "Effect": "Allow",
+    "Principal": { "AWS": "000000000000" },
+    "Action": "sts:AssumeRole",
+    "Condition": { "BoolIfExists": { "aws:MultiFactorAuthPresent": "true" } }
+  }
+}
